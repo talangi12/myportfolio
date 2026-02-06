@@ -34,8 +34,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React 18+
-- **Language**: TypeScript
+- **Frontend Framework**: React 18+ and html
+- **Language**: javascript and typescript
 - **Styling**: Tailwind CSS
 - **UI Components**: Shadcn/ui
 - **Build Tool**: Vite
@@ -73,7 +73,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
    ```
 
 4. **Open in browser**
-   - Visit `http://localhost:5173` (or the URL shown in your terminal)
+   - Visit `http://localhost:5173`
 
 ## 💻 Development
 
@@ -95,13 +95,13 @@ src/
 │   ├── ui/             # UI components (Shadcn/ui components)
 │   └── NavLink.tsx     # Navigation link component
 ├── pages/              # Page components
-│   ├── Index.tsx       # Home page
-│   ├── Skills.tsx      # Skills section
-│   ├── Education.tsx   # Education & timeline
-│   ├── Childhood.tsx   # Childhood memories
-│   ├── Aspirations.tsx # Future goals
-│   ├── Contact.tsx     # Contact form
-│   └── NotFound.tsx    # 404 page
+│   ├── Index.js      # Home page
+│   ├── Skills.js     # Skills section
+│   ├── Education.js   # Education & timeline
+│   ├── Childhood.js   # Childhood memories
+│   ├── Aspirations.js # Future goals
+│   ├── Contact.js     # Contact form
+│   └── NotFound.js    # 404 page
 ├── assets/             # Images and static assets
 ├── hooks/              # Custom React hooks
 ├── lib/                # Utility functions

@@ -1,53 +1,222 @@
-# Welcome to your Lovable project
+# My Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Showcase your skills, experience, and projects in an engaging and professional manner.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🌐 Live Demo
 
-## How can I edit this code?
+- **Website**: [YOUR_DOMAIN_HERE](https://YOUR_DOMAIN_HERE)
+- **Repository**: [GitHub - talangi12/myportfolio](https://github.com/talangi12/myportfolio)
 
-There are several ways of editing your application.
+## 📋 Table of Contents
 
-**Use Lovable**
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- **Interactive Components** - Smooth animations and transitions
+- **Dark/Light Mode** - Theme switching capability
+- **Sections Included**:
+  - Home/Hero Section
+  - About Me
+  - Skills & Expertise
+  - Education & Timeline
+  - Childhood Memories
+  - Aspirations & Goals
+  - Contact Form
+  - Footer with Social Links
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend Framework**: React 18+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui
+- **Build Tool**: Vite
+- **Package Manager**: npm/bun
+- **Testing**: Vitest
+- **Linting**: ESLint
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v16 or higher)
+- npm or bun package manager
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/talangi12/myportfolio.git
+   cd myportfolio
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   bun run dev
+   ```
+
+4. **Open in browser**
+   - Visit `http://localhost:5173` (or the URL shown in your terminal)
+
+## 💻 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint to check code quality
+- `npm test` - Run tests with Vitest
+
+### Project Structure
+
+```
+src/
+├── components/          # Reusable React components
+│   ├── cards/          # Card components (SkillCard, TimelineCard)
+│   ├── layout/         # Layout components (Navigation, Footer, Layout)
+│   ├── ui/             # UI components (Shadcn/ui components)
+│   └── NavLink.tsx     # Navigation link component
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   ├── Skills.tsx      # Skills section
+│   ├── Education.tsx   # Education & timeline
+│   ├── Childhood.tsx   # Childhood memories
+│   ├── Aspirations.tsx # Future goals
+│   ├── Contact.tsx     # Contact form
+│   └── NotFound.tsx    # 404 page
+├── assets/             # Images and static assets
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── App.tsx             # Main app component
+├── main.tsx            # Entry point
+└── index.css           # Global styles
 ```
 
-**Edit a file directly in GitHub**
+## 📦 Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Hosting Options
 
-**Use GitHub Codespaces**
+Choose one of these popular hosting platforms:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+#### **Vercel** (Recommended)
+- Optimized for React/Next.js projects
+- Free tier available
+- Automatic deployments from GitHub
+
+1. Push code to GitHub
+2. Visit [vercel.com](https://vercel.com)
+3. Connect your GitHub account
+4. Import the repository
+5. Deploy automatically
+
+#### **Netlify**
+- Easy GitHub integration
+- Free tier with generous limits
+- Great for static sites
+
+1. Visit [netlify.com](https://netlify.com)
+2. Connect GitHub account
+3. Select repository
+4. Build command: `npm run build`
+5. Publish directory: `dist`
+
+#### **GitHub Pages**
+- Free hosting directly from GitHub
+- No build configuration needed
+
+1. Update `vite.config.ts` with your repo name
+2. Run `npm run build`
+3. Push to GitHub
+4. Enable Pages in repository settings
+
+### Domain Setup
+
+1. **Purchase a domain** from providers like:
+   - GoDaddy
+   - Namecheap
+   - Google Domains
+   - Cloudflare
+
+2. **Point domain to your hosting**:
+   - Update DNS records to point to your host
+   - Add custom domain in hosting platform settings
+   - Update the homepage URL in this README
+
+3. **Enable HTTPS**
+   - Most modern hosts provide free SSL/TLS certificates
+   - Ensure "Always use HTTPS" is enabled
+
+### Custom Domain Example
+
+If your domain is `yourname.com`:
+1. Hosting platform: Add custom domain in settings
+2. DNS provider: Create CNAME/A records pointing to hosting
+3. Update README with: `https://yourname.com`
+
+## 🔧 Configuration
+
+### Customization
+
+- **Colors & Theme**: Edit `tailwind.config.ts`
+- **Navigation**: Modify `src/components/layout/Navigation.tsx`
+- **Content**: Update pages in `src/pages/`
+- **Images**: Replace assets in `src/assets/`
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **GitHub**: [@talangi12](https://github.com/talangi12)
+- **Website**: [YOUR_DOMAIN_HERE](https://YOUR_DOMAIN_HERE)
+
+## 🙏 Acknowledgments
+
+- [Shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [React](https://react.dev/) - JavaScript library for UI
+
+---
+
+**Last Updated**: February 6, 2026
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
